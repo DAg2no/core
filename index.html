@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Palopedia</title>
+    <link rel="stylesheet" href="./src/styles.css" />
+  </head>
+  <body>
+    <main>
+      <section>
+        <nav class="navbar">
+          <div class="title-nav">
+            <h2>Petrolpedia</h2>
+          </div>
+          <div class="search-nav">
+            <input type="search" name="buscador" id="buscador" placeholder="Buscar mascotas">
+          </div>
+          <div class="login-nav">
+            <button id="loginButton">Iniciar sesión</button>
+          </div>
+        </nav>
+        <div class="container">
+          <div class="flex-container">
+            <div class="flex-1">
+              <div class="card-container">
+                <div class="title-card">
+                  <h1>Gato Atigrado</h1>
+                </div>
+                <div class="body-card">
+                  <div class="type-info">sustantivo</div>
+                  <p>Plural: Gatos Atigrados</p>
+                  <p>Un gato con un pelaje distintivo que presenta rayas, puntos o patrones en remolino, usualmente con una marca en forma de "M" en su frente</p>
+                </div>
+                <div>
+                  <button
+                    onclick="contadordeLikes(this, 'Gatos Atigrado was liked')"
+                    class="contador-btn"
+                  > 
+                    <span class="contadorElement">0</span> Me gusta
+                  </button>
+                </div>
+              </div>
+              <div class="card-container">
+                <div class="title-card">
+                  <h1>
+                    Golden Retriever
+                  </h1>
+                </div>
+                <div class="body-card">
+                  <p class="type-info">sustantivo</p>
+                  <p>Plural: Golden Retrievers</p>
+                  <p>
+                    Una raza de perro amistosa, inteligente y devota, conocida por su pelaje dorado y su habilidad para recuperar objetos sin dañarlos
+                  </p>
+                </div>
+                <div>
+                  <button
+                    onclick="contadordeLikes(this, 'Golden Retrievers was liked')"
+                    class="contador-btn"
+                  > 
+                    <span class="contadorElement">0</span> Me gusta
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="flex-2">
+              <div class="card-container">
+                <p style="font-size: large;">Petrolpedia está definida por TI</p>
+                <button id="addDefinitionButton">Agregar definición</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="./src/script.js"></script>
+  </body>
+</html>
